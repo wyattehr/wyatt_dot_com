@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Wyatt Page</title>
+    <style>
+        /* Make the page fill the screen and center the text */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            cursor: pointer; /* shows it's clickable */
+        }
+        h1 {
+            font-size: 3em;
+            color: #333;
+        }
+    </style>
+</head>
+<body onclick="saySomething()">
+    <h1 id="message">Hello Wyatt</h1>
+
+    <script>
+        function saySomething() {
+            // Change the text when the page is clicked
+            const message = document.getElementById('message');
+            message.textContent = "I can feel that, Wyatt.";
+        }
+    </script>
+</body>
+</html>
